@@ -1,0 +1,19 @@
+CREATE TABLE products(
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(30),
+       category VARCHAR(30),
+       price INT,
+       stock_quantity INT
+       
+);
+
+INSERT INTO products(id,name,category,price,stock_quantity)VALUES(43,'labtap','electronic',50000,10);
+INSERT INTO products(name,category,price,stock_quantity)VALUES('mobile','electronic',30000,15);
+INSERT INTO products(name,category,price,stock_quantity)VALUES('fan','electrical',10000,45);
+INSERT INTO products(name,category,price,stock_quantity)VALUES('light','electrical',456,30);
+
+UPDATE products
+SET price=price+50
+WHERE price<500;
+
+SELECT * FROM products;
