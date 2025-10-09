@@ -7,3 +7,10 @@ CREATE TABLE customers(
 
 );
 
+INSERT INTO customers(customers_id,name,city,email,phone_number)VALUES(201,'kannan','puliangudi','asdf123@123',1234567890);
+INSERT INTO customers(name,city,email,phone_number)VALUES('raja','tenkasi','raja123@gamil.com','');
+UPDATE customers
+SET phone_number=NULL
+WHERE phone_number='';
+
+SELECT * FROM customers;
